@@ -1,0 +1,87 @@
+1. Newton Second Law
+
+    Algoritma
+1. Simpan 'massa benda' dengan nilai 600 Kg
+2. Simpan 'percepatan benda' dengan nilai 2 m/s2
+3. Simpan 'resultan gaya' tanpa diberikan nilai
+4. Hitung hasil perkalian 'massa benda' dengan 'percepatan benda'
+5. Setelah mendapatkan hasil perhitungan, isikan hasilnya ke dalam 'resultan gaya'
+6. Tampilkan nilai dari 'resultan gaya'
+
+    Pseudocode
+STORE 'masa' with 600
+STORE 'percepatan' with 2
+STORE 'resultan-gaya' without any value
+
+CALCULATE 'masa' times 'percepatan'
+SET 'resultan' value with calculation result
+
+DISPLAY 'resultan'
+
+2. Tahun Kabisat
+
+    Algoritma
+1. Simpan 'tahun' dengan nilai berapapun
+2. Jika tahun habis di bagi 4 dan tidak habis di bagi 100, maka masuk ke step 4. Jika tidak, abaikan step 4 dan langsung ke step 3
+3. Jika tahun habis di bagi 4 , habis di bagi 100 dan habis di bagi 400, maka masuk ke step 4. Jika tidak, maka abaikan step 4 dan langsung ke step 5
+4. Tampilkan 'tahun kabisat'
+5. Tampilkan 'bukan tahun kabisat'
+
+    Pseudocode
+STORE 'tahun' with any year value
+IF 'tahun' MOD 4 EQUALS TO 0 AND 'tahun' MOD 100 NOT EQUALS TO 0 THEN
+    DISPLAY 'tahun kabisat'
+ELSE IF 'tahun' MOD 4 EQUALS TO 0 AND 'tahun' MOD 100 EQUALS TO 0 AND 'tahun' MOD 400 EQUALS TO 0 THEN
+    DISPLAY 'tahun kabisat'
+ELSE
+    DISPLAY 'bukan tahun kabisat'
+END IF
+
+3. Laundry Day
+
+    Algoritma
+1. Simpan nilai 'pakaian' dengan angka 0
+2. Ulangi step 3 selama 'pakaian' masih lebih kecil sama dengan 20. Jika 'pakaian' sudah 21 lanjut ke step 4
+3. Tambah 'pakaian' dengan 1, agar semakin mendekati batas perulangan. Kembali ke step 2
+4. Tampilkan '20 pakaian sudah di dalam mesin cuci' , berarti mesin sudah bisa di hidupkan.
+
+    Pseudocode
+STORE 'pakaian' with 0
+
+WHILE 'pakaian' SMALLER EQUALS TO 20
+    ADD 'pakaian' by 1
+
+
+DISPLAY '20 pakaian sudah masuk ke mesin cuci'
+
+4. Periksa Kuku
+
+    Algoritma
+1. Simpan nilai 'siswa atau siswi' dengan angka 0
+2. Ulangi step 6 selama 'siswa atau siswi' masih lebih kecil sama dengan 40. Jika 'siswa atau siswi' sudah 41 lanjut ke step 7
+3. Jika guru menemukan 'siswa atau siswi' yang memiliki kuku panjang maka masuk ke step 4. Jika tidak abaikan step 4 dan langsung ke step 5
+4. Tampilkan 'guru akan menghukum siswa atau siswi tersebut'
+5. Tampilkan 'guru akan memuji siswa atau siswi tersebut'
+6. Tambah 'siswa atau siswi' dengan 1, agar semakin mendekati batas perulangan. Kembali ke step 2
+7. Tampilkan '40 orang siswa atau siswi sudah diperiksa' , berarti pemeriksaan selesai
+
+    Pseudocode
+STORE 'guru' with 1
+STORE 'siswa/siswi' with 0
+
+WHILE 'siswa/siswi' SMALLER EQUALS TO 40
+    IF 'guru' menemukan 'siswa/siswi' yang memiliki kuku panjang THEN 
+        DISPLAY 'guru menghukum siswa atau siswi tersebut'
+    ELSE 
+        DISPLAY 'guru memuji siswa atau siswi tersebut'
+    END IF
+
+    ADD 'siswa/siswi' by 1
+
+DISPLAY '40 orang siswa atau siswi sudah diperiksa'
+
+
+
+
+
+
