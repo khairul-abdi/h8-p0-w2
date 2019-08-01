@@ -9,23 +9,23 @@ for(x = 1; x <= 5; x++){
 }
 
 console.log('menggunakan while');
-var y = 1;
+var i = 1;
 var rowsWhile= 5;
 
-while(y <= rowsWhile){
+while(i <= rowsWhile){
     console.log('*');
-    y++;    
+    i++;    
 }
 
 console.log('menggunakan do-while');
 
-var a = 1;
+var i = 1;
 var rowsFor = 5;
 
 do{
     console.log('*');
-    a++;
-}while(a <= rowsFor)
+    i++;
+}while(i <= rowsFor)
 
 
 // 2. Menyusun Barisan Bintang Dengan Nested Looping
