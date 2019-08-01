@@ -9,14 +9,14 @@
 6. Tampilkan nilai dari 'resultan gaya'
 
     Pseudocode
-STORE 'masa' with 600
-STORE 'percepatan' with 2
-STORE 'resultan-gaya' without any value
+STORE 'masaBenda' with 600
+STORE 'percepatanBenda' with 2
+STORE 'resultanGaya' without any value
 
 CALCULATE 'masa' times 'percepatan'
-SET 'resultan' value with calculation result
+SET 'resultanGaya' value with calculation result
 
-DISPLAY 'resultan'
+DISPLAY 'resultanGaya'
 
 2. Tahun Kabisat
 
@@ -48,7 +48,7 @@ END IF
     Pseudocode
 STORE 'pakaian' with 0
 
-WHILE 'pakaian' SMALLER EQUALS TO 20
+WHILE 'pakaian' LESS THAN OR EQUALS TO 20
     ADD 'pakaian' by 1
 
 
@@ -66,19 +66,19 @@ DISPLAY '20 pakaian sudah masuk ke mesin cuci'
 7. Tampilkan '40 orang siswa atau siswi sudah diperiksa' , berarti pemeriksaan selesai
 
     Pseudocode
-STORE 'guru' with 1
-STORE 'siswa/siswi' with 0
 
-WHILE 'siswa/siswi' SMALLER EQUALS TO 40
-    IF 'guru' menemukan 'siswa/siswi' yang memiliki kuku panjang THEN 
+STORE 'siswaSiswi' with 0
+
+WHILE 'siswaSiswi' LESS THAN OR EQUALS TO 40
+    IF 'siswaSiswi' EQUAL TO 'kuku panjang' THEN 
         DISPLAY 'guru menghukum siswa atau siswi tersebut'
     ELSE 
         DISPLAY 'guru memuji siswa atau siswi tersebut'
     END IF
 
-    ADD 'siswa/siswi' by 1
+    ADD 'siswaSiswi' by 1
 
-DISPLAY '40 orang siswa atau siswi sudah diperiksa'
+DISPLAY '40 orang siswa atau siswi sudah diperiksa oleh guru'
 
 
 
