@@ -16,20 +16,6 @@ console.log(shoutOut()) // Menampilkan "Halo Function!" di console
 
 
 //Tugas 2
-// Cara 1
-
-function calculateMultiply(){
-    calculateMultiply = num1 * num2;
-    return calculateMultiply;
-}
-
-var num1 = 5;
-var num2 = 6;
-
-var hasilPerkalian = calculateMultiply(num1,num2);
-console.log(hasilPerkalian); // Menampilkan angka 30
-
-// Cara 2
 
 function calculateMultiply1(a, b){
     return a * b;
