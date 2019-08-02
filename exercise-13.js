@@ -48,4 +48,3 @@ function xo(str) {
   console.log(xo2('oxo')); // false
   console.log(xo2('xxxooo')); // true
   console.log(xo2('xoxooxxo')); // true
-

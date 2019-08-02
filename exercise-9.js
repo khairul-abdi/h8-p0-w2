@@ -17,8 +17,8 @@ console.log(shoutOut()) // Menampilkan "Halo Function!" di console
 
 //Tugas 2
 
-function calculateMultiply(a, b){
-    return a * b;
+function calculateMultiply(x, y){
+    return x * y;
 }
 
 var num1 = 5;

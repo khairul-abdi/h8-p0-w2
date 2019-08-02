@@ -4,7 +4,8 @@ console.log('============================');
 
 console.log('menggunakan for');
 var rows = 5;
-for(x = 1; x <= 5; x++){
+
+for(var i = 1; i <= 5; i++){
     console.log('*');
 }
 

@@ -1,13 +1,15 @@
 // [Exercises 4] Mengenal penggunaan Conditional (Switch-Case) dalam JavaScript
 
 var tanggal=20;  //assign nilai variabel tanggal disini! (dengan angka antara 1 - 31)
-var bulan=12;    //assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
+var bulan=11;    //assign nilai variabel bulan disini! (dengan angka antara 1 - 12)
 var tahun=1999; //assign nilai variabel tahun disini! (dengan angka antara 1900 - 2200)
 
 if(tanggal<1 || tanggal > 31){
     console.log("Tanggal yang anda masukkan salah! , masukkan tanggal antara 1 - 31");
 }else if(tahun<1900 || tahun >2200){
     console.log("Tahun yang anda masukkan salah! , masukkan tahun antara 1900 - 2200");
+}else if(bulan < 1 || bulan >12){
+    console.log("Bulan yang anda masukkan salah, masukkan bulan antara 1 - 12");
 }else{
 
     switch (bulan){
@@ -46,9 +48,6 @@ if(tanggal<1 || tanggal > 31){
             break;
         case 12:
             bulan = "Desember";        
-            break;
-        default:
-            bulan = 'Invalid';
             break;
     }
     console.log(tanggal+" "+bulan+" "+tahun);
