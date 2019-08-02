@@ -5,7 +5,8 @@ function konversiMenit(menit) {
     var konversiJam = menit / konversi;
     var sisaMenit = menit % konversi;
 
-    var hasilJam = Math.floor(konversiJam);
+    // var hasilJam = Math.floor(konversiJam);
+    var hasilJam = parseInt(konversiJam);
 
     if(sisaMenit < 10){
         hasilMenit = '0' + sisaMenit;
