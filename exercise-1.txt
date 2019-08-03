@@ -40,45 +40,57 @@ END IF
 3. Laundry Day
 
     Algoritma
-1. Simpan nilai 'pakaian' dengan angka 0
-2. Ulangi step 3 selama 'pakaian' masih lebih kecil sama dengan 20. Jika 'pakaian' sudah 21 lanjut ke step 4
-3. Tambah 'pakaian' dengan 1, agar semakin mendekati batas perulangan. Kembali ke step 2
-4. Tampilkan '20 pakaian sudah di dalam mesin cuci' , berarti mesin sudah bisa di hidupkan.
+1. Simpan nilai 'jumlah pakaian pada mesin cuci' dengan angka 0
+2. Simpan nilai 'jumlah pakaian' dengan angka 20
+3. Ulangi step 4 selama 'jumlah pakaian' lebih besar dari 0 dan 'jumlah pakaian pada mesin cuci' lebih kecil 20. 
+   Jika 'jumlah pakaian' sudah 0 dan 'jumlah pakaian pada mesin cuci' sudah 20 lanjut ke step 5
+4. Tambah 'jumlah pakaian pada mesin cuci' dengan 1 dan kurangi 'jumlah pakaian' dengan 1, 
+   agar semakin mendekati batas perulangan. Kembali ke step 3
+5. Tampilkan '20 pakaian sudah di dalam mesin cuci' , berarti mesin sudah bisa di hidupkan.
 
     Pseudocode
-STORE 'pakaian' with 0
+STORE 'jmlPakaianPadaMesinCuci' with 0
+STORE 'jmlPakaian' with 20
 
-WHILE 'pakaian' LESS THAN OR EQUALS TO 20
-    ADD 'pakaian' by 1
+WHILE 'jmlpakaian' MORE THAN 0
+    ADD 'jmlPakaianPadaMesinCuci' by 1
+    REDUCE 'jmlPakaian' by 1
+END WHILE
 
-
-DISPLAY '20 pakaian sudah masuk ke mesin cuci'
+DISPLAY '20 pakaian sudah masuk ke dalam mesin cuci'
 
 4. Periksa Kuku
 
     Algoritma
-1. Simpan nilai 'siswa atau siswi' dengan angka 0
-2. Ulangi step 6 selama 'siswa atau siswi' masih lebih kecil sama dengan 40. Jika 'siswa atau siswi' sudah 41 lanjut ke step 7
-3. Jika guru menemukan 'siswa atau siswi' yang memiliki kuku panjang maka masuk ke step 4. Jika tidak abaikan step 4 dan langsung ke step 5
-4. Tampilkan 'guru akan menghukum siswa atau siswi tersebut'
-5. Tampilkan 'guru akan memuji siswa atau siswi tersebut'
-6. Tambah 'siswa atau siswi' dengan 1, agar semakin mendekati batas perulangan. Kembali ke step 2
-7. Tampilkan '40 orang siswa atau siswi sudah diperiksa' , berarti pemeriksaan selesai
+1. Simpan nilai 'siswa atau siswi' dengan angka 40
+2. Simpan nilai 'i' dengan angka 0
+3. Simpan nilai 'kuku panjang' dengan true
+4. Ulangi step 8 selama 'i' masih lebih kecil dari 'siswa atau siswi'. Jika 'i' sudah 40 lanjut ke step 9
+5. Jika 'siswa atau siswi' yang memiliki kuku panjang maka masuk ke step 6. Jika tidak abaikan step 6 dan langsung ke step 7
+6. Tampilkan 'guru akan menghukum siswa atau siswi tersebut'
+7. Tampilkan 'guru akan memuji siswa atau siswi tersebut'
+8. Tambah 'i' dengan 1, agar semakin mendekati batas perulangan. Kembali ke step 4
+9. Tampilkan '40 orang siswa atau siswi sudah diperiksa oleh guru' , berarti pemeriksaan selesai
 
     Pseudocode
 
-STORE 'siswaSiswi' with 0
+STORE 'siswaSiswi' with 40
+STORE i with 0
+STORE kukuPanjang = true
 
-WHILE 'siswaSiswi' LESS THAN OR EQUALS TO 40
-    IF 'siswaSiswi' EQUAL TO 'kuku panjang' THEN 
+WHILE 'i' LESS THAN siswaSiswi
+    IF 'siswaSiswi[i]' EQUAL TO 'kukuPanjang' THEN 
         DISPLAY 'guru menghukum siswa atau siswi tersebut'
     ELSE 
         DISPLAY 'guru memuji siswa atau siswi tersebut'
     END IF
 
-    ADD 'siswaSiswi' by 1
+    ADD 'i' by 1
+END WHILE
 
 DISPLAY '40 orang siswa atau siswi sudah diperiksa oleh guru'
+
+
 
 
 
